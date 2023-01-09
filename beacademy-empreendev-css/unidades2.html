@@ -1,0 +1,68 @@
+<!-- 
+    Dica do professor 1 :
+
+    Quando trabalhamos com designs responsivos, ou seja, layouts flexisiveis que se adaptam para qualquer tipo de tela, é interessante utilizar a medida rem.
+
+    User agent (browser), boa parte deles, usam o front-size:16px
+
+    Como converter px para rem
+    valor em px / valor da font do user agent
+
+    ex: 32px / 16px = 2rem
+
+    Dica do professro 2: 
+    Outra possibilidade é mudar a configuração do user agent de 16px para 10px, usando % e utilizando a regra de 3 da matemática, desta forma conseguimos cravar a unidade rem.
+    
+    transformar o user agent de 16px para 10px em %
+
+    User agent = 16px = 100%
+
+    10*100 = 1000
+    100/16 = 62.5%
+
+    ::root {
+        font-size: 62.5%
+    }
+ -->
+
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Responsivo</title>
+ </head>
+ <body>
+    <style>
+        :root {
+            font-size: 62.5%
+        }
+        h2 {
+            font-size: 2.4rem;
+            margin-bottom: 6.4rem;
+            
+        }
+
+        p {
+            margin-top: 3.2rem;
+            font-size: 1.6rem;
+        }
+    </style>
+ </body>
+ <main>
+    <section>
+        <article>
+            <div class="card">
+                <h2>Artigo Sobre inidade</h2>
+                <p class="text-box">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis odit debitis doloribus
+                    illo mollitia earum error quibusdam nobis aliquid. Mollitia sit assumenda sequi! Saepe ipsam
+                    repellat quo doloremque rerum atque.
+                </p>
+            </div>
+        </article>
+    </section>
+</main>
+
+ </html>
