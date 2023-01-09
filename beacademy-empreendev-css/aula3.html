@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/style.css">
+    
+    <!-- Especificidades
+    0. Universal selector, combinator e pseudo-class (:not())
+    1. elementos do tipo seletor e pseudo-elementos (::before, ::after)
+    10. Classes e atributos de seletores ([type="radio"])
+    100. seletor ID
+    1000. Inline
+    
+    -->
+
+    <style>
+        h1 {
+            background: rgba(0, 0, 255, 0.596);
+        }
+
+        #super-title {
+            background: red;
+        }
+
+        h1 {
+            background: green;
+        }
+        .my-title-2 {
+            background: yellow;
+        }
+        strong {
+            color: blueviolet;
+        }
+        .my-text strong {
+            color:aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="super-title">Testando especificidades</h1>
+    <p class="my-text">
+        Lorem ipsum dolor sit amet<strong> consectetur</strong> adipisicing elit. <br> Quasi sit accusamus laborum ratione suscipit dolor expedita molestiae, deserunt quod exercitationem
+        <br>
+        accusantium aspernatur commodi, cumque <br>
+        repudiandae totam incidunt quae necessitatibus fuga.
+    </p>
+    <h1 class="my-title-2">Testando especificidades</h1>
+    <p class="my-text-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Quasi sit accusamus laborum ratione suscipit dolor expedita molestiae, deserunt quod exercitationem
+        <br>
+        accusantium aspernatur <strong>commodi</strong>, cumque <br>
+        repudiandae totam incidunt quae necessitatibus fuga.
+    </p>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário parte 2</title>
+</head>
+<body>
+    <!-- 
+        <textarea>
+            # Elemento de texto de mais de uma linha
+            # muito utilizado em textos maiores
+     -->
+
+     <form action="confirm.html" method="post">
+
+        <textarea></textarea> <br>
+
+        <label for="message">Mensagem</label>
+        <textarea 
+        name="" 
+        id="" 
+        cols="30" 
+        rows="10">
+    </textarea>
+
+     <!-- 
+        optgroup
+
+        # Elemento utilizado para agrupar uma sequencia de opções
+      -->
+
+      <br><br>
+
+      <label>Escolha seu professor</label>
+      <br>
+      <select name="prof" id="">
+        <optgroup label="professores">
+            <option value="Luan">Luan</option>
+            <option value="Regis">Regis</option>
+            <option value="Jenifer">Jenifer</option>
+            <option value="Moacir">Moacir</option>
+        </optgroup>
+        <optgroup label="Cursos">
+            <option value="">backend</option>
+            <option value="">forntend</option>
+            <option value="">design</option>
+            <option value="">devops</option>
+        </optgroup>
+
+      </select>
+    </form>
+</body>
+</html>

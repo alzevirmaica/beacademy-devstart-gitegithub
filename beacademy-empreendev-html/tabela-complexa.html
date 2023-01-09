@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela complexa</title>
+</head>
+<body>
+    <table>
+        <caption>
+            Professores be.academy
+        </caption>
+        <colgroup>
+            <col span="1" style="background: red;">
+            <col span="2" style="background: blue;">
+            <col span="2" style="background: green;">
+        </colgroup>
+
+        <thead>
+            <th rowspan="2"> <br> Be.academy</th>
+            <th colspan="2">Professores Front-end</th>
+            <th colspan="2">Professores Back-end</th>
+        </thead>
+        <thead>
+            <tr>
+                <th rowspan="2"></th>
+                <th>Entrada</th>
+                <th>Saída</th>
+                <th>Entrada</th>
+                <th>Saída</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th>Horário de sexta-feira</th>
+                <td>08:00</td>
+                <td>15:00</td>
+                <td>09:00</td>
+                <td>15:00</td>
+             </tr>
+             <tr>
+                <th>Horário de Sábado</th>
+                <td>08:00</td>
+                <td>14:00</td>
+                <td>08:00</td>
+                <td>14:00</td>
+             </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>2</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

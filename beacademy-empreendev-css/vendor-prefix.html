@@ -1,0 +1,67 @@
+<!-- 
+    São propriedades que permitem que browsers adicionem features a fim de colocar em uso alguma novidade que vemos no CSS
+
+    exemplos:
+    p {
+        -webkit-background-clip: text; /*Chrmoe, Safari, ios e Android*/
+        -moz-background-clip: text; /* Mozila (firefox) */
+        -ms-background-clip: text; /* Internet Explorer ou Edge */
+
+    }
+    https://ireade.github.io/which-vendor-prefix
+
+    https://caniuse.com
+ -->
+
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vendor-prefix</title>
+    <style>
+        p {
+            font-size: 84px;
+
+        }
+
+        body::-webkit-scrollbar {
+            width:20px;
+        }
+
+        body::-webkit-scrollbar-track {
+            background:#ece0fd ;
+        }
+
+        body::-webkit-scrollbar-thumb {
+            background: red;
+            border-radius:6px;
+        }
+    </style>
+ </head>
+ <body>
+    <h1>
+        Vamos testar o vendor prefix (webkit)
+    </h1>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quia minima accusamus tenetur aliquam fuga? Quae, accusantium delectus laborum sapiente officia eum maxime ad quibusdam neque! Enim ex porro placeat.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quia minima accusamus tenetur aliquam fuga? Quae, accusantium delectus laborum sapiente officia eum maxime ad quibusdam neque! Enim ex porro placeat.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quia minima accusamus tenetur aliquam fuga? Quae, accusantium delectus laborum sapiente officia eum maxime ad quibusdam neque! Enim ex porro placeat.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quia minima accusamus tenetur aliquam fuga? Quae, accusantium delectus laborum sapiente officia eum maxime ad quibusdam neque! Enim ex porro placeat.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quia minima accusamus tenetur aliquam fuga? Quae, accusantium delectus laborum sapiente officia eum maxime ad quibusdam neque! Enim ex porro placeat.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quia minima accusamus tenetur aliquam fuga? Quae, accusantium delectus laborum sapiente officia eum maxime ad quibusdam neque! Enim ex porro placeat.
+    </p>
+ </body>
+ </html>

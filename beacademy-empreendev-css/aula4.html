@@ -1,0 +1,109 @@
+<!-- 
+        #At rules
+        
+        São regras relacionadas ao comportamento do CSS, começa com um sinal de @ seguido do identificador e do valor
+
+        São as seguintes:
+        
+        @import serve para incluir um CSs externo.
+
+        @import url (link externo)
+
+        @media são regras condicionais para vários dispositivos.
+
+        @media (min-width: 365px) {
+
+        }
+
+        @font-face é para colocar forntes externas.
+
+        @font-face {
+
+        }
+
+        @keyframes serve para animations do CSS
+
+        @keyframes animationname {
+
+        }
+
+
+        ## Combinadores (combinatiors) ##
+
+        combinadores são utilizados para buscar e combinar seletores a fim de aplicar uma estilização.
+
+        Tipos:
+
+        ##Descendent combinator##
+
+        identificado por um espaço entre os seletores.
+        -busca um elemento dentro do outro
+
+        body ul li
+
+        ## Child Combinators ##
+
+        Identificado pelo sinal > entre dois seletores
+        - Seleciona somente o elemento filho direto do pai
+        - Elementos depois do filho direto serão desconsiderado
+
+        ## Adjacent sibling combinator ##
+        identificado pelo sinal de + entre dois seletores
+        - Busca somente o elemento do lado direto que é irmão direto da hieraquie
+     -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>At Rules e combinators</title>
+
+    <style>
+         /* body ul li {
+            background: green;
+            color: red;
+        }
+
+        body section div ul li {
+            background: blue;
+            color: yellow;
+        } */
+
+        /* body > ul {
+            background: red;
+        }
+        div > ul {
+            background: blue;
+        } */
+        
+        h1 + p {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+   <!-- <div>
+        <p>Teste</p>
+   </div>
+   <ul>
+        <li>Testando combinadores</li>
+   </ul>
+   
+   <div>Outro formato</div>
+   <section>
+    <div>
+        <ul>
+            <li>Outro marcador</li>
+        </ul>
+    </div>
+   </section> -->
+   <h1>Título</h1>
+   <p>Mais um parágrafo</p>
+
+   <button>Enviar</button>
+
+   <p>Outro parágrafo</p>
+</body>
+</html>
