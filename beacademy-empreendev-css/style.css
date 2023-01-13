@@ -7,7 +7,7 @@ body p:nth-child(2) {
     color: blue;
 } */ 
 
-ul li:nth-child(even) {
+/* ul li:nth-child(even) {
     background: red;
     color: white;
 }
@@ -15,4 +15,45 @@ ul li:nth-child(even) {
 ul li:nth-child(odd) {
     background: blue;
     color: white;
+} */
+
+
+.btn-submit {
+    padding: 12px;
+    color: white;
+    background: rgb(165, 165, 240);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background .5s;
+}
+
+.btn-submit:hover {
+  background: rgb(38, 90, 31);
+    
+}
+
+input[type=text] {
+    border:1px solid #f2f2f2;
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    outline: none;
+    transition: 1.2s;
+}
+
+input[type=text]:hover {
+    border: 1px solid #b12020;
+   
+}
+.btn-submit:focus {
+    background: #b12020;
+}
+
+input[type=text]:disabled {
+    background: rgba(69, 69, 114, 0.349);
+}
+
+input[type=text]:disabled::placeholder {
+    color: rgb(158, 25, 25);
 }
