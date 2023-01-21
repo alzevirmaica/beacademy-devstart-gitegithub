@@ -34,9 +34,9 @@
 //  Lista de valores
 //  Agrupamento de dados
 
-console.log([
-   "Bolacha",
-   "Coca-cola",
-   "Verduras",
-   "Agua"
-])
+// console.log([
+//    "Bolacha",
+//    "Coca-cola",
+//    "Verduras",
+//    "Agua"
+// ])
