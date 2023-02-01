@@ -57,10 +57,54 @@
 
 //Função anônima
 
-(function () {
-    console.log("Paylivre s2")
-}) () //Autoexecução
+// (function () {
+//     console.log("Paylivre s2")
+// }) () //Autoexecução
 
-setTimeout(function() { // atrasa o tempo para ser excecutado
-    console.log("Vou levar 3 segundos para ser executado!")
-},3000)//3s
+// setTimeout(function() { // atrasa o tempo para ser excecutado
+//     console.log("Vou levar 3 segundos para ser executado!")
+// },3000)//3s
+
+//Parte 1
+
+// let assunto
+
+// function criarAssunto(assunto) {
+//     return assunto
+// }
+
+// console.log(criarAssunto())
+
+//parte 2
+
+//  let assunto = 'Estudar' // var = valor
+
+//  function criarAssunto(assunto) {
+//      return assunto //
+//  }
+//  console.log(assunto) //resposta => estudar
+//  console.log(criarAssunto(assunto)) // resposta=> estudar
+
+ //parte 3
+
+//  let assunto = 'Estudar' // var = valor
+
+//  function criarAssunto(assunto) {
+//      assunto = "Escutar música" // Mudança de valor
+//      return assunto //
+//  }
+//  console.log(assunto) //resposta => estudar
+//  console.log(criarAssunto(assunto)) // resposta=> Escutar música
+
+ //parte 4
+
+ 
+ let assunto = 'Estudar' // var = valor
+
+ function criarAssunto() { //Sem parâmetro
+     assunto = "Escutar música" // Mudança de valor
+     return assunto //
+ }
+ console.log(assunto) //resposta => 'Estudar
+ console.log(criarAssunto(assunto)) // resposta=> 'Escutar música'
+
