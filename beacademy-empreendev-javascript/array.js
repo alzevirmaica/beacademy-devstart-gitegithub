@@ -40,6 +40,45 @@
 // console.log(stringInclude.endsWith("ve"))
 
 //Transformando um Array em caracteres
-let wordToArray = "Quem está gostando diz Hey!!"
+// let wordToArray = "Quem está gostando diz Hey!!"
 
-console.log(Array.from(wordToArray))
+// console.log(Array.from(wordToArray))
+
+// Manipulando Arrays
+const animals = ["Elefante", "cachorro", "Galinha", "leão", "gato"]
+// console.log(animals)
+
+//4 posições no array
+// 5 no length
+
+// Adicionar item no fim do array
+// console.log(animals.push("rato"))
+// console.log(animals)
+
+//Adicionar item no começo
+// console.log(animals.unshift("porco"))
+// console.log(animals)
+
+//Remover itens do fim 
+// console.log(animals.pop())
+// console.log(animals)
+
+//Remover item do começo
+// console.log(animals.shift())
+// console.log(animals)
+
+//Pegar somente alguns elementos do array
+//Não modifica o array
+// console.log(animals.slice(0,3))
+// console.log(animals)
+
+//Remover um ou mais itens do array
+// animals.splice(1,3)
+// console.log(animals)
+
+console.log(animals)
+//Encontrar a posição do array
+let index = animals.indexOf('cachorro')
+console.log(index)
+animals.splice(index,1)
+console.log(animals)
