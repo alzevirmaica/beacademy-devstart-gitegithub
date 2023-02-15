@@ -11,17 +11,39 @@
     Para manipular os dados conforme as regras de negócio, todas as instâncias
     terão acesso aos métodos do prototype.
 */
-function Pessoa(nome, idade) {
-    this.nome = nome;
-    this.idade = idade
+// function Pessoa(nome, idade) {
+//     this.nome = nome;
+//     this.idade = idade
+// }
+
+// const marcelo = new Pessoa('Marcelo', 44)
+// const joao = new Pessoa('Joaão',40)
+// console.log(marcelo)
+// console.log(joao)
+// console.log(Pessoa.prototype)
+
+
+// const nome = 'Alzevir'
+// console.log(nome.prototype)
+
+const notebbok = {
+    cor: 'preta',
+    ano: '2022',
+    especifications: function(value) {
+        return `Este Macbook custa R$${value},00; cor ${this.cor}; ano${this.ano}`
+    }
 }
 
-const marcelo = new Pessoa('Marcelo', 44)
-const joao = new Pessoa('Joaão',40)
-console.log(marcelo)
-console.log(joao)
-console.log(Pessoa.prototype)
+const dell = {
+    marca: 'Dell'
+}
+
+const macBook = {
+    marca: 'MacBook'
+}
+
+Object.setPrototypeOf(dell, notebbok)
+Object.setPrototypeOf(macBook, notebbok)
 
 
-const nome = 'Alzevir'
-console.log(nome.prototype)
+console.log(macBook.especifications(8000))
