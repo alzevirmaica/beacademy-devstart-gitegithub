@@ -50,5 +50,56 @@
 
     Finally()
     Será invocado independente do resultado da promise.
+    
+    promisse.all()
+    utilizado quando há várias promessas que devem ser resolvidas
 
+    
 */
+// setTimeout(() => {
+//     console.log('Resposta')
+// }, 3000)
+
+// function show() {
+//     setTimeout(() => {
+//         console.log('Oi')
+//     },2000)
+//     console.log('Até Logo')
+// }
+
+// show()
+
+
+// const minhaPromise = new Promise((resolve, reject) => {
+//     let n = 9
+//     if(n > 10) {
+//        resolve()
+//     }else {
+//         reject()
+//     }
+// })
+
+// minhaPromise
+// .then(result =>console.log('Resolveu'))
+// .catch(err =>console.log('Errou'))
+// .finally(() =>console.log('finally'))
+
+
+// import fetch from 'node-fetch';
+
+
+// //fetch
+
+// const firstUser = (userId) => {
+//     let response = fetch(`https://jsonplaceholder.typicode.com/todos/${userId}`)
+//     .then(res => res.json()) // passa o resultado para json
+//     .then(data => console.log(data)) //console.log do resultado
+// }
+
+// firstUser(1)
+
+fetch(`https://viacep.com.br/ws/0100100/json/`)
+.then(response => response.json())
+.then(cep => {
+    console.log(cep.bairro, cep.logradouro)
+})
