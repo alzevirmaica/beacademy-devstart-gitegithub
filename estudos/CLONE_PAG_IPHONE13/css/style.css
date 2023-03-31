@@ -130,7 +130,7 @@ header nav {
 }
 
 #main-content #product-image.changing {
-    opacity: 0.5s;
+    opacity: 0.5;
 }
 
 #image-picker {
@@ -187,4 +187,33 @@ header nav {
 
 .selected {
     outline: 2px solid #43a1ff;
+}
+
+/* mobile */
+@media (max-width: 480px) {
+    #navbar li {
+        display: none;
+    }
+
+    #navbar #logo {
+       display: flex; 
+    }
+
+    #botton-header-links a {
+        display: none;
+    }
+
+    #botton-header-links .btn {
+        display: flex;
+    }
+
+    #main-content {
+        padding: 2rem;
+        overflow: hidden;
+    }
+
+    #main-content #subtitle {
+        font-size: 3rem;
+    }
+
 }
